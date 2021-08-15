@@ -1,7 +1,7 @@
 package com.americancolors.endreverse.ar.models;
 
 import com.americancolors.endreverse.ar.arutils.ARObservables;
-import com.americancolors.endreverse.ar.segmentor.SegmentorImplFinal;
+import com.americancolors.endreverse.ar.segmentor.Segmentor3ImplFinal;
 
 public class ARDebugParams {
     public boolean applyHoughExtend;
@@ -39,7 +39,7 @@ public class ARDebugParams {
         this.houghExtendLength = 10;
         this.otsuMultiplier = 0.3f;
         this.delayValue = 40;
-        this.cvImageWidth = SegmentorImplFinal.IMAGE_RESIZE_FRAME_WIDTH;
+        this.cvImageWidth = Segmentor3ImplFinal.IMAGE_RESIZE_FRAME_WIDTH;
         this.cannyMin = 20;
         this.cannyMax = 25;
         this.blurKernel = 3;

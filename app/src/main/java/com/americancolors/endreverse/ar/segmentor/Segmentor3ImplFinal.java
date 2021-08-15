@@ -12,7 +12,7 @@ import org.opencv.imgproc.Imgproc;
 
 import java.util.List;
 
-public class SegmentorImplFinal implements Segmentor {
+public class Segmentor3ImplFinal implements Segmentor {
     public static final int ANCHOR_POS_X = -1;
     public static final int ANCHOR_POS_Y = -1;
     public static final int BORDER_SIZE = 1;
@@ -55,8 +55,10 @@ public class SegmentorImplFinal implements Segmentor {
     public double pointSimilarityThreshold = 3.0d;
     public final Scalar scalar_0 = new Scalar(0.0d);
     public final Scalar scalar_255 = new Scalar(255.0d);
+    public boolean isDarkWallShiftEnabled;
+    public boolean isLightWallShiftEnabled;
 
-    public SegmentorImplFinal(Boolean bool, Boolean bool2, Boolean bool3, int i, float f, double d) {
+    public Segmentor3ImplFinal(Boolean bool, Boolean bool2, Boolean bool3, int i, float f, double d) {
         Core.setNumThreads(6);
         this.mResizedImageWidth = IMAGE_RESIZE_FRAME_WIDTH;
     }
@@ -101,10 +103,11 @@ public class SegmentorImplFinal implements Segmentor {
     public Bitmap predictAndColorMultiTapSingleMask(Bitmap bitmap, List<SeedPointAndColor> list, List<LineEndPoints> list2) {
         return null;
     }
-
     public void setIsDarkWallShiftFlag(boolean z) {
+        this.isDarkWallShiftEnabled = z;
     }
 
     public void setIsLightWallShiftFlag(boolean z) {
+        this.isLightWallShiftEnabled = z;
     }
 }

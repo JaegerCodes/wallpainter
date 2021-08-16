@@ -1,5 +1,9 @@
 package com.americancolors.endreverse.ar.arutils;
 
+import android.content.Context;
+
+import org.jetbrains.annotations.Nullable;
+
 public class ARGlobals {
     public static String caffeModelContent = "";
     public static String caffeModelPath = "";
@@ -11,4 +15,5 @@ public class ARGlobals {
     public static volatile String prototxtPath = "";
     public static Integer upperExposureIndex = 0;
     public static ARUtils.VisualizerState visualizerState = ARUtils.VisualizerState.LIVE;
+
 }

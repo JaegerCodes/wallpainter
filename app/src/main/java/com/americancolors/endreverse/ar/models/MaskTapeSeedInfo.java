@@ -1,6 +1,5 @@
 package com.americancolors.endreverse.ar.models;
 
-/* renamed from: com.akzonobel.ar.models.MaskTapeSeedInfo */
 public class MaskTapeSeedInfo {
     public float screenX;
     public float screenY;

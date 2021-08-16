@@ -82,7 +82,7 @@ public class Segmentor3ImplFinal implements Segmentor {
         for (int i = 0; i < list.size(); i++) {
             SeedPointAndColor seedPointAndColor = list.get(i);
             SeedPointAndColor seedPointAndColor2 = this.cachePoints.get(i);
-            if (Math.sqrt(Math.pow(seedPointAndColor.tapPoint.x - seedPointAndColor2.tapPoint.x, 2.0d) + Math.pow(seedPointAndColor.tapPoint.y - seedPointAndColor2.tapPoint.y, 2.0d)) > this.pointSimilarityThreshold || seedPointAndColor.f7764r != seedPointAndColor2.f7764r || seedPointAndColor.f7763g != seedPointAndColor2.f7763g || seedPointAndColor.f7760b != seedPointAndColor2.f7760b || seedPointAndColor.meanY != seedPointAndColor2.meanY) {
+            if (!(Math.sqrt(Math.pow(seedPointAndColor.tapPoint.x - seedPointAndColor2.tapPoint.x, 2.0d) + Math.pow(seedPointAndColor.tapPoint.y - seedPointAndColor2.tapPoint.y, 2.0d)) <= this.pointSimilarityThreshold && seedPointAndColor.r == seedPointAndColor2.r && seedPointAndColor.g == seedPointAndColor2.g && seedPointAndColor.b == seedPointAndColor2.b && seedPointAndColor.meanY == seedPointAndColor2.meanY)) {
                 return false;
             }
         }

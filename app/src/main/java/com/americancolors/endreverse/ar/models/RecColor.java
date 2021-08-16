@@ -1,6 +1,5 @@
 package com.americancolors.endreverse.ar.models;
 
-/* renamed from: com.akzonobel.ar.models.RecColor */
 public class RecColor {
     public String collectId;
     public String colorName;

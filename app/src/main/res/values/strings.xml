@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">endreverse</string>
+    <string name="ignore">ignore</string>
+    <string name="paint">paint</string>
 </resources>

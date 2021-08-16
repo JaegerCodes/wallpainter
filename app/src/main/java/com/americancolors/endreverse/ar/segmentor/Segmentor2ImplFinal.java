@@ -257,7 +257,7 @@ public class Segmentor2ImplFinal implements Segmentor {
         //return mat2;
     }
 
-    private Mat hdrConversion(Mat mat) {
+    /*private Mat hdrConversion(Mat mat) {
         MergeMertens a2 = Photo.createMergeMertens();
         Imgproc.cvtColor(mat, new Mat(), 1);
         Mat mat2 = new Mat();
@@ -313,7 +313,7 @@ public class Segmentor2ImplFinal implements Segmentor {
         this.ellipseStructElement = Imgproc.getStructuringElement(0, new Size(ARObservables.currentARDebugParams.getEdKernel(), ARObservables.currentARDebugParams.getEdKernel()), this.anchor);
         this.lower = new Scalar(aRDebugParams.getHoughExtendLength(), aRDebugParams.getHoughExtendLength(), aRDebugParams.getHoughExtendLength());
         this.upper = new Scalar(aRDebugParams.getHoughExtendLength(), aRDebugParams.getHoughExtendLength(), aRDebugParams.getHoughExtendLength());
-    }
+    }*/
 
     @Override
     public void setIsDarkWallShiftFlag(boolean z) {

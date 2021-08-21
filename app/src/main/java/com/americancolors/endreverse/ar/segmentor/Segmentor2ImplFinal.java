@@ -4,21 +4,19 @@ import android.annotation.SuppressLint;
 import android.graphics.Bitmap;
 
 import com.americancolors.endreverse.ar.arutils.ARObservables;
-import com.americancolors.endreverse.ar.models.ARDebugParams;
 
-import java.util.ArrayList;
-import java.util.List;
 import org.opencv.android.Utils;
 import org.opencv.core.Core;
-import org.opencv.core.Mat;
 import org.opencv.core.CvType;
+import org.opencv.core.Mat;
 import org.opencv.core.Point;
 import org.opencv.core.Range;
 import org.opencv.core.Scalar;
 import org.opencv.core.Size;
 import org.opencv.imgproc.Imgproc;
-import org.opencv.photo.MergeMertens;
-import org.opencv.photo.Photo;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Segmentor2ImplFinal implements Segmentor {
     public int BorderSize;
@@ -167,8 +165,6 @@ public class Segmentor2ImplFinal implements Segmentor {
     public Bitmap predictAndColorMultiTapSingleMask(Bitmap bitmap, List<SeedPointAndColor> list) {
         return predictAndColorMultiTapSingleMask(bitmap, list, null);
     }
-
-
 
     @Override
     public Bitmap predictAndColorMultiTapSingleMask(Bitmap bitmap, List<SeedPointAndColor> list, List<LineEndPoints> list2) {

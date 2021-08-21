@@ -15,14 +15,8 @@ public class ARDebugParams {
     public int edKernel;
     public boolean enableLightCorrection;
     public int exposureCompensationIndex;
-    public int frameImageHeight;
-    public int frameImageWidth;
-    public boolean gaussBlurflag;
     public int houghExtendLength;
-    public float imageContrast;
     public float imageExposure;
-    public float imageHighlights;
-    public float imageShadows;
     public boolean otsuFlag;
     public float otsuMultiplier;
     public boolean showPoints;
@@ -51,10 +45,6 @@ public class ARDebugParams {
         return this.blurKernel;
     }
 
-    public ARObservables.CameraFocusMode getCameraFocusMode() {
-        return this.cameraFocusMode;
-    }
-
     public int getCannyMax() {
         return this.cannyMax;
     }
@@ -63,56 +53,12 @@ public class ARDebugParams {
         return this.cannyMin;
     }
 
-    public int getCvImageWidth() {
-        return this.cvImageWidth;
-    }
-
-    public int getDelayValue() {
-        return this.delayValue;
-    }
-
     public int getEdKernel() {
         return this.edKernel;
     }
 
-    public int getExposureCompensationIndex() {
-        return this.exposureCompensationIndex;
-    }
-
-    public int getFrameImageHeight() {
-        return this.frameImageHeight;
-    }
-
-    public int getFrameImageWidth() {
-        return this.frameImageWidth;
-    }
-
-    public int getHoughExtendLength() {
-        return this.houghExtendLength;
-    }
-
-    public float getImageContrast() {
-        return this.imageContrast;
-    }
-
     public float getImageExposure() {
         return this.imageExposure;
-    }
-
-    public float getImageHighlights() {
-        return this.imageHighlights;
-    }
-
-    public float getImageShadows() {
-        return this.imageShadows;
-    }
-
-    public float getOtsuMultiplier() {
-        return this.otsuMultiplier;
-    }
-
-    public String getTimeTakenPerFrame() {
-        return this.timeTakenPerFrame;
     }
 
     public boolean isApplyHoughExtend() {
@@ -123,17 +69,24 @@ public class ARDebugParams {
         return this.cannyFlag;
     }
 
-    public boolean isEnableLightCorrection() {
-        return this.enableLightCorrection;
-    }
-
-    public boolean isGaussBlurflag() {
-        return this.gaussBlurflag;
-    }
-
     public boolean isOTSUFlag() {
         return this.otsuFlag;
     }
+
+
+    public boolean showPoints() {
+        return this.showPoints;
+    }
+
+
+    /*
+
+    public int frameImageHeight;
+    public int frameImageWidth;
+    public boolean gaussBlurflag;
+    public float imageContrast;
+    public float imageHighlights;
+    public float imageShadows;
 
     public void setApplyHoughExtend(boolean z) {
         this.applyHoughExtend = z;
@@ -234,7 +187,59 @@ public class ARDebugParams {
         this.timeTakenPerFrame = str;
     }
 
-    public boolean showPoints() {
-        return this.showPoints;
+    public ARObservables.CameraFocusMode getCameraFocusMode() {
+        return this.cameraFocusMode;
     }
+
+    public int getCvImageWidth() {
+        return this.cvImageWidth;
+    }
+
+    public int getDelayValue() {
+        return this.delayValue;
+    }
+
+    public float getImageHighlights() {
+        return this.imageHighlights;
+    }
+
+    public float getImageShadows() {
+        return this.imageShadows;
+    }
+
+    public float getOtsuMultiplier() {
+        return this.otsuMultiplier;
+    }
+
+    public String getTimeTakenPerFrame() {
+        return this.timeTakenPerFrame;
+    }
+
+    public boolean isEnableLightCorrection() {
+        return this.enableLightCorrection;
+    }
+
+    public boolean isGaussBlurflag() {
+        return this.gaussBlurflag;
+    }
+
+    public int getExposureCompensationIndex() {
+        return this.exposureCompensationIndex;
+    }
+
+    public int getFrameImageHeight() {
+        return this.frameImageHeight;
+    }
+
+    public int getFrameImageWidth() {
+        return this.frameImageWidth;
+    }
+
+    public int getHoughExtendLength() {
+        return this.houghExtendLength;
+    }
+
+    public float getImageContrast() {
+        return this.imageContrast;
+    }*/
 }

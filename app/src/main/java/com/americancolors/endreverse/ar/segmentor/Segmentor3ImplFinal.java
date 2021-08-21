@@ -63,7 +63,6 @@ public class Segmentor3ImplFinal implements Segmentor {
         this.mResizedImageWidth = IMAGE_RESIZE_FRAME_WIDTH;
     }
 
-
     private boolean isSimilarImage(Mat mat) {
         Mat mat2 = this.cacheImage;
         if (mat2 == null || !mat2.size().equals(mat.size())) {
@@ -96,7 +95,7 @@ public class Segmentor3ImplFinal implements Segmentor {
     }
 
     public Bitmap predictAndColorMultiTapSingleMask(Bitmap bitmap, List<SeedPointAndColor> list) {
-        return predictAndColorMultiTapSingleMask(bitmap, list, (List<LineEndPoints>) null);
+        return predictAndColorMultiTapSingleMask(bitmap, list, null);
     }
 
     @Override
